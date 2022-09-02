@@ -54,5 +54,16 @@ function handleDelete(index) {
   //delete 1 data dari array
   absensi_data.splice(index, 1);
   // render kembali ke html
+
+  //confirm
+  let conDelete = confirm('yakin delete bang ?');
+
+  if (!conDelete) {
+    return;
+  } else {
+    //delete data array sesuai index
+    absensiData.splice(index, 1);
+  }
+
   renderToHtml();
 }
