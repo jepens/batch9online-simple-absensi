@@ -62,7 +62,7 @@ function handleDelete(index) {
     return;
   } else {
     //delete data array sesuai index
-    absensiData.splice(index, 1);
+    absensi_data.splice(index, 1);
   }
 
   renderToHtml();
